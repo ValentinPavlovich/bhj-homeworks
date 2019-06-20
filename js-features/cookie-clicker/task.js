@@ -12,13 +12,3 @@ clicker__counter.textContent++;
 };
 
 image.onclick = changeSizes;
-
- 
-          
- 
-        
-          
-          
-    
- 
-      

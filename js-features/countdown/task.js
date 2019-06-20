@@ -1,10 +1,9 @@
-function timer () {
+let timer = setInterval(function() {
     let sec = document.getElementById("timer");
     if (sec.textContent > 0) {
         sec.textContent -= 1;
     } else {
-        alert("Вы победили в конкурсе!");        
+        clearInterval(timer);
+        alert("Вы победили в конкурсе!");              
     }      
-};
-
-setInterval(timer, 1000);
+}, 1000);
